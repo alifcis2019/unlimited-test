@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+  <path d="M45 7H1V47H45V7Z" fill="white"/>
+  <path d="M45 43H1V47H45V43Z" fill="#BBD8FF"/>
+  <path d="M15 25H7V33H15V25Z" fill="#BBD8FF"/>
+  <path d="M39 33H31V41H39V33Z" fill="#BBD8FF"/>
+  <path d="M11 3V11" stroke="#092F63" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M19 3V11" stroke="#092F63" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M27 3V11" stroke="#092F63" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M35 3V11" stroke="#092F63" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M45 7H1V47H45V7Z" stroke="#092F63" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M15 25V17H39V41H7V25H15Z" stroke="#092F63" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M15 25V41" stroke="#092F63" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M23 17V41" stroke="#092F63" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M31 17V41" stroke="#092F63" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M15 25H39" stroke="#092F63" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M7 33H39" stroke="#092F63" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

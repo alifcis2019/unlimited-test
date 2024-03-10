@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #dragger,
+        #ring,
+        .img,
+        .vignette {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            user-select: none;
+            position: absolute;
+        }
+
+        .carousel,
+        .img {
+            position: absolute;
+        }
+
+        .img {
+            background-image: url(./content/assets/images/home/carousel\ 1.jpg);
+        }
+
+        .carousel {
+            perspective: 2000px;
+            width: 300px;
+            height: 300px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .vignette {
+            width: 1400px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(to left, rgba(0, 0, 0, 1) 12%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1) 88%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="carousel">
+        <div id="ring">
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+        </div>
+    </div>
+    <div class="vignette"></div>
+
+    <div id="dragger"></div>
+    <div id="chatbot">
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"
+        integrity="sha512-G7Wpe/pbg+zjyyM9HgQY6kacLAy+580lmA8DUXmZtioTI5FkaCRoLOaCLoeblrZABs7KZFD03cfSV9j7nmwxfw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./content/js/gsap-carousel.js"></script>
+    <script type="text/javascript">
+        (function (d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function () {
+                window.voiceflow.chat.load({
+                    verify: { projectID: '65eba122017b3e41473b35c0' },
+                    url: 'https://general-runtime.voiceflow.com',
+                    versionID: 'production',
+                    render: {
+                        mode: 'embedded',
+                        target: document.getElementById('chatbot'),
+                    },
+                    autostart: false
+                });
+            }
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+    </script>
+</body>
+
+</html>

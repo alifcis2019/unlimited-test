@@ -1,0 +1,29 @@
+// abstracts
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+// base
+@import "./base/base";
+@import "./base/reset";
+
+// components
+@import "./components/preloader";
+@import "./components/globalBtn";
+@import "./components/input-container";
+@import "./components/carousel";
+@import "./components/preloader";
+
+// layout
+@import "./layout/navigation";
+@import "./layout/footer";
+@import "./layout/chat";
+@import "./layout/requestDemo";
+@import "./layout/services-modal";
+
+// pages
+@import "./pages/index";
+@import "./pages/services";
+@import "./pages/clients";
+@import "./pages/contactUs";
+@import "./pages/aboutUs";
+@import "./pages/blog";

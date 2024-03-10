@@ -1,0 +1,39 @@
+.globalBtn {
+    width: 160px;
+    height: 49px;
+    padding: 17px 12px;
+    border-radius: 12px;
+    background-color: $color-primary;
+    box-shadow: 0px 2px 16px 0px transparent;
+    border: 2px solid $color-primary;
+    outline: none;
+    color: white;
+    font-family: $mainFont;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    transition: all .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+    &:hover {
+        border: 2px solid $color-primary;
+        box-shadow: 0px 2px 16px 0px $color-boxShadow;
+        background: #FFF;
+        color: $color-primary;
+    }
+
+    @include responsive(max, 1100px) {
+        padding: 8px;
+        border: 1px solid $color-primary;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+
+        &:hover {
+            border: 1px solid $color-primary;
+        }
+    }
+}

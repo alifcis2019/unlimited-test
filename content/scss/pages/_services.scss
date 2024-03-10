@@ -1,0 +1,323 @@
+.service {
+    padding-inline: 96px;
+
+    @include responsive (max, 991px) {
+        padding-inline: 50px;   
+    }
+
+    &__hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include responsive (max, 991px) {
+            flex-direction: column;
+        }
+
+        &__body {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+
+            @include responsive (max, 991px) {
+                width: 100%;
+            }
+
+            .header {
+                color: $color-primary;
+                font-family: $mainFont;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 500;
+                @include responsive (max, 991px) {
+                    font-size: 32px;
+                }
+            }
+
+            .descreption {
+                color: $color-pargraph;
+                font-family: $mainFont;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 400;
+                @include responsive (max, 991px) {
+                    font-size: 16px;
+                }
+            }
+
+            .globalBtn {
+                width: max-content;
+            }
+        }
+
+        &__video {
+            width: 40%;
+            height: 30%;
+            object-fit: cover;
+            overflow: hidden;
+            @include responsive (max,991px) {
+                width: 80%;
+                height: 350px;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    &__what {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include responsive (max,991px) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        &__header {
+            width: 50%;
+            color: rgba(0, 0, 0, 0.80);
+            font-family: $mainFont;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            @include responsive (max,991px) {
+                width: 100%;
+                font-size: 32px;
+            }
+            span {
+                color: $color-primary;
+            }
+        }
+
+        &__desc {
+            width: 40%;
+            color: $color-pargraph;
+            font-family: $mainFont;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            @include responsive (max,991px) {
+                width: 100%;
+                font-size: 16px;
+            }
+        }
+    }
+
+    &__achieve {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        margin-top: 80px;
+        @include responsive (max , 991px) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        &__header {
+            h2 {
+                color: rgba(0, 0, 0, 0.80);
+                text-align: center;
+                font-family: $mainFont;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.4;
+                @include responsive (max,991px) {
+                    font-size: 30px;
+                    width: 100%;
+                    text-align: $s;
+                }
+
+                span {
+                    color: $color-primary;
+                    @include responsive (max,991px) {
+                        width: 100%;
+                    }
+                }
+            }
+            @include responsive (max , 991px) {
+                width: 100%;
+            }
+        }
+
+        &__desc {
+            max-width: 40%;
+            color: $color-pargraph;
+            text-align: center;
+            font-family: $mainFont;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            @include responsive (max,991px) {
+                max-width: 100%;
+                font-size: 16px;
+                text-align: $s;
+            }
+        }
+
+        &__solutions {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 50px;
+            @include responsive (max,991px) {
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 20px;
+            }
+            .solution {
+                width: 45%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: space-between;
+                position: relative;
+                margin-block: 20px;
+                @include responsive (max,991px) {
+                    width: 100%;
+                }
+                &__box {
+                    width: 100%;
+                    flex: 1 0 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    border: 1px solid rgba(0, 0, 0, 0.10);
+                    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+                    @include responsive (max,991px) {
+                        width:100%;
+                    }
+                    &__title {
+                        flex: 1 0 0;
+                        padding: 30px 40px;
+                        text-align: center;
+                        @include responsive (max,991px) {
+                            padding: 5px;
+                        }
+                        h4 {
+                            color: $color-primary;
+                            font-family: $mainFont;
+                            font-size: 22px;
+                            font-style: normal;
+                            font-weight: 500;
+                            margin: 0;
+                            @include responsive (max,991px) {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+
+                    &__icon {
+                        padding: 20px;
+                        border-right: 1px solid rgba(0, 0, 0, 0.10);
+                        @include responsive (max,991px) {
+                            padding: 5px;
+                            width:40px ;
+                            height: 40px;
+                        }
+                        img {
+                            @include responsive (max,991px) {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+
+                &__desc {
+                    width: 100%;
+                    height: 70px;
+                    @include responsive (max,991px) {
+                        display: none;
+                    }
+                    &__par {
+                        position: absolute;
+                        color: $color-pargraph;
+                        text-align: center;
+                        font-family: $mainFont;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        bottom: 0;
+                        opacity: 0;
+                        transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                    }
+                }
+
+                &:hover .solution__desc__par {
+                    bottom: -25px;
+                    opacity: 1;
+                    @include responsive (max,991px) {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &__meeting {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include responsive(max,991px) {
+            flex-direction: column;
+            gap: 20px;
+        } 
+        &__body {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+            @include responsive(max,991px) {
+                width: 100%;
+            }
+        }
+
+        &__form {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+            @include responsive (max,991px) {
+                width: 100%;
+            }
+            input {
+                width: 100%;
+            }
+            textarea {
+                width: 100%;
+            }
+            .nda {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 24px;
+                &__selection {
+                    display: flex;
+                    gap: 50px;
+                    div {
+                        display: flex;
+                        input {
+                            display: inline;
+                        }
+                    }
+                }
+            }
+            .globalBtn {
+                width: 100%;
+            }
+        }
+    }
+}
