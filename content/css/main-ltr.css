@@ -224,8 +224,8 @@ main {
 .carousel .img {
   position: absolute;
   top: 5%;
-  right: 0;
-  left: 0; }
+  left: 0;
+  right: 0; }
 
 /* line 22, ../scss/components/_carousel.scss */
 .carousel {
@@ -249,8 +249,8 @@ main {
 
 /* line 42, ../scss/components/_carousel.scss */
 #dragger {
-  top: 25%;
-  height: 300px; }
+  top: 30%;
+  height: 250px; }
 
 /* line 1, ../scss/components/_preloader.scss */
 #preloader {
@@ -2230,7 +2230,7 @@ footer {
   @media (max-width: 991px) {
     /* line 1, ../scss/pages/_contactUs.scss */
     .contactUS {
-      padding: 50px; } }
+      padding: 10px; } }
   /* line 8, ../scss/pages/_contactUs.scss */
   .contactUS__form {
     width: 70%;
@@ -2969,4 +2969,5 @@ footer {
         border: 1px solid #FFF;
         background: #035FA8;
         color: white; }
+
 /*# sourceMappingURL=main-ltr.css.map */

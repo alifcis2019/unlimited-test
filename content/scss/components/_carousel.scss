@@ -15,15 +15,15 @@
 {
     position: absolute;
     top: 5%;
-    right: 0;
-    left: 0;
+    #{$s}: 0;
+    #{$e}: 0;
 }
 
 .carousel  {
     perspective: 2000px;
     width: 300px;
     height: 300px;
-    left: 50%;
+    #{$s}: 50%;
     top: 5%;
     transform: translateX(-50%);
     // transform: translate(-50%, -50%);
@@ -33,13 +33,13 @@
     width: 1400px;
     top: 25%;
     height: 300px;
-    left: 50%;
+    #{$s}: 50%;
     transform: translateX(-50%);
     // opacity: 0;
 }
 
 
 #dragger {
-    top: 25%;
-    height: 300px;
+    top: 30%;
+    height: 250px;
 }

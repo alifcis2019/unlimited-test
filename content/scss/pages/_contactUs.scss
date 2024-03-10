@@ -2,7 +2,7 @@
     padding-inline: 96px;
 
     @include responsive (max, 991px) {
-        padding: 50px;
+        padding: 10px;
     }
 
     &__form {

@@ -169,7 +169,7 @@ main {
   perspective: 2000px;
   width: 300px;
   height: 300px;
-  left: 50%;
+  right: 50%;
   top: 5%;
   transform: translateX(-50%); }
 
@@ -177,12 +177,12 @@ main {
   width: 1400px;
   top: 25%;
   height: 300px;
-  left: 50%;
+  right: 50%;
   transform: translateX(-50%); }
 
 #dragger {
-  top: 25%;
-  height: 300px; }
+  top: 30%;
+  height: 250px; }
 
 #preloader {
   position: fixed;
@@ -1465,7 +1465,7 @@ footer {
   padding-inline: 96px; }
   @media (max-width: 991px) {
     .contactUS {
-      padding: 50px; } }
+      padding: 10px; } }
   .contactUS__form {
     width: 70%;
     height: max-content;
