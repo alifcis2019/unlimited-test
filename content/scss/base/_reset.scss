@@ -89,7 +89,7 @@ button {
 /* customize pages with main section*/
 main {
   overflow: hidden;
-  margin-block: 180px;
+  margin-top: 180px;
   @include responsive (max,991px) {
     margin-bottom: 20px;
   }
